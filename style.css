@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+#container {
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+}
+
+.falling-star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: starfall 2s linear infinite;
+}
+
+@keyframes starfall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
