@@ -15,6 +15,7 @@
     background-color: #fff;
     border-radius: 50%;
     animation: starfall 2s linear infinite;
+    margin: 10px;
 }
 
 @keyframes starfall {
