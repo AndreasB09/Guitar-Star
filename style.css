@@ -6,16 +6,12 @@
     position: relative;
     height: 100vh;
     background-color: #000;
-}
-
-#btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.button {
+button {
     height: 5rem;
     width: 5rem;
 }
