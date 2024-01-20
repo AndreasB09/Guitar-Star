@@ -8,6 +8,18 @@
     background-color: #000;
 }
 
+#btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button {
+    height: 5rem;
+    width: 5rem;
+}
+
 .falling-star {
     position: absolute;
     width: 5px;

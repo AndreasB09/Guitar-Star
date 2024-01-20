@@ -2,26 +2,45 @@
 const soundFolder = "sounds";
 const sounds = [
   {
-    // fileName: "Guitar_Chords1.wav",
+    fileName: "distgit_chords_g.mp3",
     hotKey: "q",
     //color: "green",
   },
   {
+    fileName: "distgit_chords_a.mp3",
     hotKey: "w",
     //color: red
   },
   {
+    fileName: "distgit_chords_c.mp3",
     hotKey: "e",
   },
   {
+    fileName: "distgit_chords_d.mp3",
     hotKey: "r",
   },
   {
+    fileName: "distgit_chords_e.mp3",
     hotKey: "t",
+  },
+  {
+    fileName: "distgit_chords_f.mp3",
+    hotKey: "y",
   },
 ];
 
+const btnContainer = document.createElement("div");
+btnContainer.id = "btn-container";
+
 //create buttons and function
+sounds.forEach((sound) => {
+  const chordButton = document.createElement("button");
+  chordButton.classList.add("chord-btn");
+  chordButton.textContent = sound.hotKey;
+  btnContainer.appendChild(chordButton);
+});
+
+document.getElementById("container").appendChild(btnContainer);
 
 //add mouseclick and keypress listeners
 
@@ -33,9 +52,9 @@ let maxStars = 20;
 
 function createFallingStar() {
   if (starCount < maxStars) {
-    const fallingStar = document.createElement('div');
-    fallingStar.classList.add('falling-star')
-    document.getElementById('container').appendChild(fallingStar);
+    const fallingStar = document.createElement("div");
+    fallingStar.classList.add("falling-star");
+    document.getElementById("container").appendChild(fallingStar);
 
     const randomStar = Math.random() * (window.innerWidth - 20);
     fallingStar.style.left = `${randomStar}px`;
@@ -44,14 +63,14 @@ function createFallingStar() {
 
     setTimeout(() => {
       fallingStar.style.animationDelay = `-${randomDelay}ms`;
-      fallingStar.style.animationPlayState = 'running';
+      fallingStar.style.animationPlayState = "running";
       starCount++;
     }, randomDelay);
   }
 }
 
 function startAnimation() {
-    setInterval(createFallingStar, 2000);
+  setInterval(createFallingStar, 2000);
 }
 
 window.onload = startAnimation;
