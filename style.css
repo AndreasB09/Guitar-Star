@@ -14,6 +14,12 @@
 button {
     height: 5rem;
     width: 5rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: aqua;
 }
 
 .falling-star {
