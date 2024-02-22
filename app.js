@@ -36,6 +36,7 @@ btnContainer.id = "btn-container";
 sounds.forEach((sound) => {
   const chordButton = document.createElement("button");
   chordButton.classList.add("chord-btn");
+  chordButton.classList.add(`chord-btn-${sound.hotKey}`);
   chordButton.textContent = sound.hotKey;
   btnContainer.appendChild(chordButton);
 });

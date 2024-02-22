@@ -11,16 +11,41 @@
     align-items: center;
 }
 
-button {
+.chord-btn {
     height: 5rem;
     width: 5rem;
     margin: 1rem;
     border-radius: 10px;
 }
 
-button:hover {
+.chord-btn:hover {
     background-color: aqua;
 }
+
+.chord-btn-q {
+    background-color: green;
+}
+
+.chord-btn-w {
+    background-color: red;
+}
+
+.chord-btn-e {
+    background-color: yellow;
+}
+
+.chord-btn-r {
+    background-color: blue;
+}
+
+.chord-btn-t {
+    background-color: orange;
+}
+
+.chord-btn-y {
+    background-color: purple;
+}
+
 
 .falling-star {
     position: absolute;
