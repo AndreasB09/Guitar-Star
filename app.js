@@ -45,6 +45,8 @@ document.getElementById("container").appendChild(btnContainer);
 
 //add mouseclick and keypress listeners
 
+
+
 //background stars
 //animations glitch at start and sometimes scrollbar flashes
 //once it reaches maxStars it seems fine

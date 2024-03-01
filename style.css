@@ -1,68 +1,77 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 #container {
-    position: relative;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+#btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
 .chord-btn {
-    height: 5rem;
-    width: 5rem;
-    margin: 1rem;
-    border-radius: 10px;
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+  border-radius: 10px;
 }
 
 .chord-btn:hover {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 .chord-btn-q {
-    background-color: green;
-    color: #fff;
+  background-color: green;
+  color: #fff;
 }
 
 .chord-btn-w {
-    background-color: red;
+  background-color: red;
 }
 
 .chord-btn-e {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .chord-btn-r {
-    background-color: blue;
+  background-color: blue;
 }
 
 .chord-btn-t {
-    background-color: orange;
+  background-color: orange;
 }
 
 .chord-btn-y {
-    background-color: purple;
+  background-color: purple;
 }
 
-
 .falling-star {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 50%;
-    animation: starfall 2s linear infinite;
-    margin: 10px;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: starfall 3s linear infinite;
+  margin: 10px;
+  overflow: hidden;
 }
 
 @keyframes starfall {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }
