@@ -36,6 +36,10 @@
   color: #fff;
 }
 
+.chord-btn-q:hover {
+  background-color: #000;
+}
+
 .chord-btn-w {
   background-color: red;
 }
