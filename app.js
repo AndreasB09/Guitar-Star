@@ -38,14 +38,26 @@ sounds.forEach((sound) => {
   chordButton.classList.add("chord-btn");
   chordButton.classList.add(`chord-btn-${sound.hotKey}`);
   chordButton.textContent = sound.hotKey;
+  chordButton.addEventListener('click', () => playSound(sound.fileName));
   btnContainer.appendChild(chordButton);
 });
 
 document.getElementById("container").appendChild(btnContainer);
 
-//add mouseclick and keypress listeners
+//add keypress listeners
 
+function playSound(fileName) {
+  const audio = new Audio (`${soundFolder}/${fileName}`);
+  audio.play();
+};
 
+document.addEventListener('keypress', (event) => {
+  const keyPressed = event.key.toLowerCase();
+  const sound = sounds.find(s => s.hotKey === keyPressed);
+  if (sound) {
+    playSound(sound.fileName);
+  }
+});
 
 //background stars
 //animations glitch at start and sometimes scrollbar flashes
