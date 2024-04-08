@@ -60,7 +60,7 @@
   background-color: purple;
 }
 
-/* starfall css */
+/* Starfall css */
 /* add gloweffect to stars */
 
 .falling-star {
@@ -82,3 +82,6 @@
     transform: translateY(100vh);
   }
 }
+
+/* Ideas: 
+Could make stars glow in different colors on keypress */
