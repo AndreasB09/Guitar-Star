@@ -44,6 +44,10 @@
   background-color: red;
 }
 
+.chord-btn-w:hover {
+  background-color: rgb(255, 0, 0);
+}
+
 .chord-btn-e {
   background-color: yellow;
 }
