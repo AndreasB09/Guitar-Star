@@ -52,6 +52,10 @@
   background-color: yellow;
 }
 
+.chord-btn-e:hover {
+  background-color: rgb(255, 200, 98);
+}
+
 .chord-btn-r {
   background-color: blue;
 }
