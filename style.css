@@ -60,12 +60,24 @@
   background-color: blue;
 }
 
+.chord-btn-r:hover {
+  background-color: aliceblue;
+}
+
 .chord-btn-t {
   background-color: orange;
 }
 
+.chord-btn-t:hover {
+  background-color: rgb(247, 183, 66);
+}
+
 .chord-btn-y {
   background-color: purple;
+}
+
+.chord-btn-y:hover {
+  background-color: plum;
 }
 
 /* Starfall css */
