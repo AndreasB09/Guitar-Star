@@ -2,7 +2,7 @@
 const soundFolder = "sounds";
 const sounds = [
   {
-    fileName: "distgit_chords_g.mp3",
+    fileName: "./sounds/distgit_chords_g.mp3",
     hotKey: "q",
     //color: "green",
   },
