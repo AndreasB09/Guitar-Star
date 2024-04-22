@@ -92,6 +92,7 @@
   animation: starfall 3s linear infinite;
   margin: 10px;
   overflow: hidden;
+  /* box-shadow: 0px 0px 20px orange;*/
 }
 
 @keyframes starfall {
