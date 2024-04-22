@@ -45,6 +45,7 @@ sounds.forEach((sound) => {
 document.getElementById("container").appendChild(btnContainer);
 
 //add keypress listeners
+//need to add keypress down and up to stop
 
 function playSound(fileName) {
   const audio = new Audio (`${soundFolder}/${fileName}`);
@@ -62,6 +63,7 @@ document.addEventListener('keypress', (event) => {
 //background stars
 //animations glitch at start and sometimes scrollbar flashes
 //once it reaches maxStars it seems fine
+//seemed to get solved with overflow:hidden. At least scrollbars disappeared
 let starCount = 0;
 let maxStars = 20;
 
